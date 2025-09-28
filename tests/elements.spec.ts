@@ -6,8 +6,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.describe("Element Interaction Tests - text box", () => {
-
-  test("should permit only the name to be filled in", async ({ page,}) => {
+  test("should permit only the name to be filled in", async ({ page }) => {
     await page.fill(LOCATORS.FULL_NAME_INPUT, TEXT.FULL_NAME);
     await page.click(LOCATORS.SUBMIT_BUTTON);
     await expect(page.locator(LOCATORS.OUTPUT_NAME)).toHaveText(TEXT.OUTPUT_NAME);
@@ -16,7 +15,7 @@ test.describe("Element Interaction Tests - text box", () => {
     await expect(page.locator(LOCATORS.OUTPUT_PERMANENT_ADDRESS)).not.toBeVisible();
   });
 
-  test('should show error for incomplete email format', async ({ page,}) => {
+  test("should show error for incomplete email format", async ({ page }) => {
     await page.fill(LOCATORS.EMAIL_INPUT, TEXT.INCOMPLETE_EMAIL);
     await page.click(LOCATORS.SUBMIT_BUTTON);
     const emailInput = page.locator(LOCATORS.EMAIL_INPUT);
@@ -27,7 +26,7 @@ test.describe("Element Interaction Tests - text box", () => {
     await expect(page.locator(LOCATORS.OUTPUT_PERMANENT_ADDRESS)).not.toBeVisible();
   });
 
-  test("should permit only the email to be filled in", async ({ page,}) => {
+  test("should permit only the email to be filled in", async ({ page }) => {
     await page.fill(LOCATORS.EMAIL_INPUT, TEXT.EMAIL);
     await page.click(LOCATORS.SUBMIT_BUTTON);
     await expect(page.locator(LOCATORS.OUTPUT_EMAIL)).toHaveText(TEXT.OUTPUT_EMAIL);
@@ -36,7 +35,7 @@ test.describe("Element Interaction Tests - text box", () => {
     await expect(page.locator(LOCATORS.OUTPUT_PERMANENT_ADDRESS)).not.toBeVisible();
   });
 
-  test("should permit only the current address to be filled in", async ({ page,}) => { 
+  test("should permit only the current address to be filled in", async ({ page }) => {
     await page.fill(LOCATORS.CURRENT_ADDRESS_INPUT, TEXT.CURRENT_ADDRESS);
     await page.click(LOCATORS.SUBMIT_BUTTON);
     await expect(page.locator(LOCATORS.OUTPUT_CURRENT_ADDRESS)).toHaveText(TEXT.OUTPUT_CURRENT_ADDRESS);
@@ -45,16 +44,16 @@ test.describe("Element Interaction Tests - text box", () => {
     await expect(page.locator(LOCATORS.OUTPUT_PERMANENT_ADDRESS)).not.toBeVisible();
   });
 
-   test("should permit only the permanent address to be filled in", async ({ page,}) => {
+  test("should permit only the permanent address to be filled in", async ({ page }) => {
     await page.fill(LOCATORS.PERMANENT_ADDRESS_INPUT, TEXT.PERMANENT_ADDRESS);
     await page.click(LOCATORS.SUBMIT_BUTTON);
-    await expect(page.locator(LOCATORS.OUTPUT_PERMANENT_ADDRESS)).toHaveText(TEXT.OUTPUT_PERMANENT_ADDRESS);    
+    await expect(page.locator(LOCATORS.OUTPUT_PERMANENT_ADDRESS)).toHaveText(TEXT.OUTPUT_PERMANENT_ADDRESS);
     await expect(page.locator(LOCATORS.OUTPUT_NAME)).not.toBeVisible();
     await expect(page.locator(LOCATORS.OUTPUT_EMAIL)).not.toBeVisible();
     await expect(page.locator(LOCATORS.OUTPUT_CURRENT_ADDRESS)).not.toBeVisible();
   });
 
-  test("should fill in the text boxes and submit the form", async ({ page,}) => {
+  test("should fill in the text boxes and submit the form", async ({ page }) => {
     await page.fill(LOCATORS.FULL_NAME_INPUT, TEXT.FULL_NAME);
     await page.fill(LOCATORS.EMAIL_INPUT, TEXT.EMAIL);
     await page.fill(LOCATORS.CURRENT_ADDRESS_INPUT, TEXT.CURRENT_ADDRESS);
