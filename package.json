@@ -1,0 +1,26 @@
+{
+  "name": "congenial-succotash",
+  "version": "1.0.0",
+  "description": "Practicing test automation with the PlayWright automated testing tool on the DemoQA website",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:chrome": "npx playwright test elements.spec.ts --project=chromium --ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoAJRomao/congenial-succotash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JoaoAJRomao/congenial-succotash/issues"
+  },
+  "homepage": "https://github.com/JoaoAJRomao/congenial-succotash#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2"
+  }
+}
