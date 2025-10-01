@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test",
-    "test:chrome:ui": "npx playwright test elements.spec.ts --project=chromium --ui",
-    "test:chrome": "npx playwright test elements.spec.ts --project=chromium"
+    "test:element": "npx playwright test elements.spec.ts --project=chromium",
+    "test:checkbox": "npx playwright test checkbox.spec.ts --project=chromium"
   },
   "repository": {
     "type": "git",
