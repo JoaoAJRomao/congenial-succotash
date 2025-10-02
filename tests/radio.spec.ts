@@ -6,15 +6,15 @@ test.beforeEach(async ({ page }) => {
 
 test.describe('Element Interaction Tests - radio button', () => {
     test('should select each radio button and verify its value', async ({ page }) => {
-        // Clica no label associado ao radio button 'Yes'
+        // Click the label associated with the 'Yes' radio button
         await page.locator('label[for="yesRadio"]').click();
         await expect(page.locator('.text-success')).toHaveText('Yes');
 
-        // Clica no label associado ao radio button 'Impressive'
+        // Click the label associated with the 'Impressive' radio button
         await page.locator('label[for="impressiveRadio"]').click();
         await expect(page.locator('.text-success')).toHaveText('Impressive');
 
-        // Verifica que o radio button 'No' está desabilitado
+        // Verify that the 'No' radio button is disabled
         await expect(page.locator('#noRadio')).toBeDisabled();
     });
 });
