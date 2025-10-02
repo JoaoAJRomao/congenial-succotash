@@ -4,9 +4,11 @@
   "description": "Practicing test automation with the PlayWright automated testing tool on the DemoQA website",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test",
+    "test": "npx playwright test --project=chromium",
+    "test:ui": "npx playwright test --ui --project=chromium",
     "test:element": "npx playwright test elements.spec.ts --project=chromium",
-    "test:checkbox": "npx playwright test checkbox.spec.ts --project=chromium"
+    "test:checkbox": "npx playwright test checkbox.spec.ts --project=chromium",
+    "test:radio": "npx playwright test radio.spec.ts --project=chromium"
   },
   "repository": {
     "type": "git",
