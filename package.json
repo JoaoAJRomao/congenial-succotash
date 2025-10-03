@@ -9,7 +9,8 @@
     "test:element": "npx playwright test elements.spec.ts --project=chromium",
     "test:checkbox": "npx playwright test checkbox.spec.ts --project=chromium",
     "test:radio": "npx playwright test radio.spec.ts --project=chromium",
-    "test:webTable": "npx playwright test webTable.spec.ts --project=chromium"
+    "test:webTable": "npx playwright test webTable.spec.ts --project=chromium",
+    "test:buttons": "npx playwright test buttons.spec.ts --project=chromium"
   },
   "repository": {
     "type": "git",
