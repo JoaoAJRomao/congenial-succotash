@@ -24,9 +24,8 @@ test.describe("Form Interaction Tests", () => {
     await page.selectOption(".react-datepicker__month-select", "4");
     await page.selectOption(".react-datepicker__year-select", "1990");
     await page.click(".react-datepicker__day--001");
-    await page.locator("#subjectsInput").type("Maths");
-    await page.getByText("Maths", { exact: true }).click({force: true});
-    // await page.keyboard.press("Enter");
+    await page.locator("#subjectsInput").fill("Maths");
+    await page.locator('#subjectsInput').press('Enter');
     await page.getByLabel('Sports').click({force: true});
     const filePath = "./tests/resources/peopleProgram.png";
     await page.setInputFiles("#uploadPicture", filePath);

@@ -1,35 +1,6 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="13.475036">
-<testsuite name="forms.spec.ts" timestamp="2025-10-05T01:52:33.611Z" hostname="chromium" tests="1" failures="1" skipped="0" time="11.37" errors="0">
-<testcase name="Form Interaction Tests › Verify that the form is filled successfully" classname="forms.spec.ts" time="11.37">
-<failure message="forms.spec.ts:17:7 Verify that the form is filled successfully" type="FAILURE">
-<![CDATA[  [chromium] › forms.spec.ts:17:7 › Form Interaction Tests › Verify that the form is filled successfully 
-
-    Error: locator.click: Element is outside of the viewport
-    Call log:
-      - waiting for getByText('Maths', { exact: true })
-        - locator resolved to <div>Maths</div>
-      - attempting click action
-        - scrolling into view if needed
-        - done scrolling
-
-
-      26 |     await page.click(".react-datepicker__day--001");
-      27 |     await page.locator("#subjectsInput").type("Maths");
-    > 28 |     await page.getByText("Maths", { exact: true }).click({force: true});
-         |                                                    ^
-      29 |     // await page.keyboard.press("Enter");
-      30 |     await page.getByLabel('Sports').click({force: true});
-      31 |     const filePath = "./tests/resources/peopleProgram.png";
-        at C:\Users\Usuario\Documents\githubProjects\congenial-succotash\tests\forms.spec.ts:28:52
-
-    Error Context: ..\test-results\forms-Form-Interaction-Tes-c44d5-form-is-filled-successfully-chromium\error-context.md
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\forms-Form-Interaction-Tes-c44d5-form-is-filled-successfully-chromium\error-context.md]]
-]]>
-</system-out>
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="22.643576">
+<testsuite name="forms.spec.ts" timestamp="2025-10-05T15:07:30.417Z" hostname="chromium" tests="1" failures="0" skipped="0" time="19.808" errors="0">
+<testcase name="Form Interaction Tests › Verify that the form is filled successfully" classname="forms.spec.ts" time="19.808">
 </testcase>
 </testsuite>
 </testsuites>
