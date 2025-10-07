@@ -1,8 +1,10 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="1" errors="0" time="20.611371000000045">
-<testsuite name="register.spec.ts" timestamp="2025-10-07T04:55:25.092Z" hostname="chromium" tests="1" failures="0" skipped="1" time="17.424" errors="0">
-<testcase name="Registration Page › should not allow registration without first name" classname="register.spec.ts" time="17.424">
-<skipped>
-</skipped>
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="8.548913">
+<testsuite name="browserWindows.spec.ts" timestamp="2025-10-07T23:55:55.214Z" hostname="chromium" tests="3" failures="0" skipped="0" time="18.479" errors="0">
+<testcase name="Browser Windows Interaction Tests - browserWindows › Verify that the new tab is opened and contains the expected text" classname="browserWindows.spec.ts" time="7.054">
+</testcase>
+<testcase name="Browser Windows Interaction Tests - browserWindows › Verify that the new window is opened and contains the expected text" classname="browserWindows.spec.ts" time="6.905">
+</testcase>
+<testcase name="Browser Windows Interaction Tests - browserWindows › Verify that the new window message is opened and contains the expected text" classname="browserWindows.spec.ts" time="4.52">
 </testcase>
 </testsuite>
 </testsuites>
