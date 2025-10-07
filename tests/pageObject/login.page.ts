@@ -18,25 +18,5 @@ export class LoginPage {
         await this.page.fill(this.fullNameInput, username);
         await this.page.fill(this.passwordInput, password);
         await this.page.click(this.loginButton);
-    }
-
-    /**
-     * Realiza o login via API para acelerar a configuração do teste.
-     * @param username - O nome de usuário para o login.
-     * @param password - A senha para o login.
-     */
-    async loginViaAPI(username: string, password: string) {
-        // Endpoint da API de login
-        const loginURL = 'https://demoqa.com/Account/v1/User';
-
-        const response = await this.page.request.post(loginURL, {
-            data: {
-                userName: username,
-                password: password
-            }
-        });
-
-        // Verifica se a requisição foi bem-sucedida
-        expect(response.ok()).toBeTruthy();
-    }
+    }    
 };

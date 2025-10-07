@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { LoginPage } from './pageObject/login.page';
 import { generateRandomString } from './utils/data-helpers.ts';
+import { RegisterPage } from './pageObject/register.page.ts';
 
 test.describe('Login Page', () => {
     test.beforeEach(async ({ page }) => {
@@ -34,24 +35,13 @@ test.describe('Login Page', () => {
     });
     test('should allow login with valid credentials', async ({ page }) => {
         const loginPage = new LoginPage(page);
+        const registerPage = new RegisterPage(page);
         const randomUsername = generateRandomString(8);
         const randomPassword = generateRandomString(8);
         // Primeiro, registrar o usuário via API
-        await loginPage.loginViaAPI(randomUsername, randomPassword);
+        await registerPage.registerViaAPI(randomUsername, randomPassword);
         // Depois, realizar o login via UI
         await loginPage.login(randomUsername, randomPassword);
         await expect(page).toHaveURL('https://demoqa.com/profile');
     });
-});
-
-test.skip('Registration Page', () => {
-    test('should not allow registration without required fields', async ({ page }) => { });
-    test('should not allow registration without first name', async ({ page }) => { });
-    test('should not allow registration without last name', async ({ page }) => { });
-    test('should not allow registration without username', async ({ page }) => { });
-    test('should not allow registration without password', async ({ page }) => { });
-    test('should not allow registration without confirm captcha', async ({ page }) => { });
-    test('should not allow registration with existing username', async ({ page }) => { });
-    test('should allow registration with valid data', async ({ page }) => { });
-
 });
