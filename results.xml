@@ -1,6 +1,22 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="11.590672">
-<testsuite name="login.spec.ts" timestamp="2025-10-07T02:38:20.515Z" hostname="chromium" tests="1" failures="0" skipped="0" time="10.174" errors="0">
-<testcase name="Login Page › should not allow login with invalid credentials" classname="login.spec.ts" time="10.174">
+<testsuites id="" name="" tests="6" failures="0" skipped="1" errors="0" time="29.697167999999998">
+<testsuite name="login.spec.ts" timestamp="2025-10-07T03:44:56.233Z" hostname="chromium" tests="6" failures="0" skipped="1" time="120.611" errors="0">
+<testcase name="Login Page › should not allow login without credentials" classname="login.spec.ts" time="23.94">
+</testcase>
+<testcase name="Login Page › should not allow login with only username" classname="login.spec.ts" time="23.969">
+</testcase>
+<testcase name="Login Page › should not allow login with only password" classname="login.spec.ts" time="23.91">
+</testcase>
+<testcase name="Login Page › should not allow login with invalid credentials" classname="login.spec.ts" time="21.02">
+</testcase>
+<testcase name="Login Page › should allow login with valid credentials" classname="login.spec.ts" time="27.772">
+</testcase>
+<testcase name="Registration Page" classname="login.spec.ts" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
 </testsuites>
