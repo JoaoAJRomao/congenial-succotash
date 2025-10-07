@@ -1,5 +1,4 @@
 import {expect, test} from '@playwright/test';
-import { time } from 'console';
 
 test.describe('Link Interaction Tests - links', () => {
     const targetLink = 'https://demoqa.com';
