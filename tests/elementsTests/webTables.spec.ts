@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { WebTables } from "./pageObject/webTables.page";
+import { WebTables } from "../pageObject/webTables.page";
 
 test.beforeEach(async ({ page }) => {
     await page.goto("https://demoqa.com/webtables");

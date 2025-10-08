@@ -1,8 +1,8 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="12.918237000000001">
-<testsuite name="frames.spec.ts" timestamp="2025-10-08T00:48:30.659Z" hostname="chromium" tests="2" failures="0" skipped="0" time="22.377" errors="0">
-<testcase name="Frames Interaction Tests › Verify that the iframe is displayed and contains the expected text" classname="frames.spec.ts" time="11.008">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="10.081803">
+<testsuite name="alertsFramesWindowsTests\modalDialogs.spec.ts" timestamp="2025-10-08T01:32:03.618Z" hostname="chromium" tests="2" failures="0" skipped="0" time="16.215" errors="0">
+<testcase name="Modal Dialogs Interaction Tests › Verify that the small modal dialog is displayed with the expected title and body text, then close it" classname="alertsFramesWindowsTests\modalDialogs.spec.ts" time="7.611">
 </testcase>
-<testcase name="Frames Interaction Tests › Verify that the second iframe is displayed and contains the expected text" classname="frames.spec.ts" time="11.369">
+<testcase name="Modal Dialogs Interaction Tests › Verify that the large modal dialog is displayed with the expected title and body text, then close it" classname="alertsFramesWindowsTests\modalDialogs.spec.ts" time="8.604">
 </testcase>
 </testsuite>
 </testsuites>

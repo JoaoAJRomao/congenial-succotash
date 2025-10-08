@@ -1,5 +1,5 @@
 import { test, expect, type Page } from "@playwright/test";
-import { LOCATORS, TEXT } from "./fixtures/textBoxElements";
+import { LOCATORS, TEXT } from "../fixtures/textBoxElements";
 
 test.beforeEach(async ({ page }) => {
   await page.goto("https://demoqa.com/text-box");
