@@ -1,10 +1,14 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="8.548913">
-<testsuite name="browserWindows.spec.ts" timestamp="2025-10-07T23:55:55.214Z" hostname="chromium" tests="3" failures="0" skipped="0" time="18.479" errors="0">
-<testcase name="Browser Windows Interaction Tests - browserWindows › Verify that the new tab is opened and contains the expected text" classname="browserWindows.spec.ts" time="7.054">
+<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="7.801262">
+<testsuite name="alerts.spec.ts" timestamp="2025-10-08T00:18:59.505Z" hostname="chromium" tests="5" failures="0" skipped="0" time="29.244" errors="0">
+<testcase name="Alerts Interaction Tests › Verify that the alert is displayed with the expected message" classname="alerts.spec.ts" time="5.361">
 </testcase>
-<testcase name="Browser Windows Interaction Tests - browserWindows › Verify that the new window is opened and contains the expected text" classname="browserWindows.spec.ts" time="6.905">
+<testcase name="Alerts Interaction Tests › Verify that the confirm alert is displayed with the expected message and accept it" classname="alerts.spec.ts" time="6.055">
 </testcase>
-<testcase name="Browser Windows Interaction Tests - browserWindows › Verify that the new window message is opened and contains the expected text" classname="browserWindows.spec.ts" time="4.52">
+<testcase name="Alerts Interaction Tests › Verify that the confirm alert is displayed with the expected message and dismiss it" classname="alerts.spec.ts" time="6.081">
+</testcase>
+<testcase name="Alerts Interaction Tests › Verify that the prompt alert is displayed with the expected message, enter text and accept it" classname="alerts.spec.ts" time="6.029">
+</testcase>
+<testcase name="Alerts Interaction Tests › Verify that the prompt alert is displayed with the expected message and dismiss it" classname="alerts.spec.ts" time="5.718">
 </testcase>
 </testsuite>
 </testsuites>
